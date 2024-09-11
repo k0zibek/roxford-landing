@@ -341,3 +341,68 @@
 .open-form-btn {
 	margin: 10px;
 }
+
+.form .text-input,
+.form .label {
+	padding: 0.75em 1em;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	line-height: normal;
+	border-radius: 0;
+	border: none;
+	background: none;
+	display: block;
+}
+
+.form .label {
+	font-weight: bold;
+	color: var(--clr-dark);
+	padding-top: 0;
+	padding-left: 0;
+	letter-spacing: 0.025em;
+	font-size: 1.125em;
+	line-height: 1.25;
+	position: relative;
+	z-index: 100;
+}
+
+.form .text-input {
+	font: inherit;
+	line-height: normal;
+	width: 100%;
+	box-sizing: border-box;
+	background: #7e7e7e;
+	color: var(--clr-light);
+	position: relative;
+}
+
+.text-input:focus {
+	background: #393939;
+}
+
+.form {
+	max-width: 35em;
+	padding: 2rem;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.form .field {
+	width: 100%;
+	margin: 0 0 1.5em 0;
+}
+
+@media screen and (min-width: 640px) {
+	body {
+		font-size: 1.25em;
+	}
+	.form .field.half {
+		width: calc(50% - 1px);
+	}
+}

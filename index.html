@@ -116,15 +116,24 @@
 			</div>
 		</section>
 		<div id="form-container" class="form-container">
-			<form id="myForm" method="POST">
+			<form id="myForm" class="form" method="POST">
 				<h2>Өзің туралы жазып кет</h2>
-				<label for="name">Аты-жөнің:</label>
-				<input type="text" id="name" name="entry.1275856074" required />
-				<label for="phone">Телефон номерің:</label>
-				<input type="text" id="phone" name="entry.1276122297" required />
-				<input type="text" id="lesson" name="entry.1106077589" value="" disabled />
-				<button type="submit" class="btn btn-darken btn-inline">Отправить</button>
-				<button type="button" class="btn btn-darken btn-inline" id="close-form">Закрыть</button>
+				<p class="field required"></p>
+					<label class="label" for="name">Аты-жөнің:</label>
+					<input class="text-input" id="name" name="entry.1275856074" required type="text" />
+				</p>
+				<p class="field required">
+					<label class="label" for="phone">Телефон номерің:</label>
+					<input class="text-input" id="phone" name="entry.1276122297" required type="phone" />
+				</p>
+				<p class="field required">
+					<label class="label" for="email">Таңдаған пән</label>
+					<input class="text-input" id="lesson" name="entry.1106077589" required readonly type="text" value="" />
+				</p>
+				<p class="field button-container">
+					<button type="submit" class="btn btn-darken btn-inline">Отправить</button>
+					<button type="button" class="btn btn-darken btn-inline" id="close-form">Закрыть</button>
+				</p>
 			</form>
 			<p id="error-message" style="color: red; display: none">Форманы толық толтыру қажет!</p>
 		</div>

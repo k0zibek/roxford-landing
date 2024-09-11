@@ -3,6 +3,7 @@ const formContainer = document.getElementById('form-container');
 const closeFormButton = document.getElementById('close-form');
 const form = document.getElementById('myForm');
 const inputField = document.getElementById('lesson');
+const errorMessage = document.getElementById('error-message');
 let redirectURL = '';
 
 function closeForm() {
