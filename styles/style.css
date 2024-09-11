@@ -66,8 +66,8 @@
 
 .banner-image {
 	display: block;
-	max-width: 25rem;
-	height: 80%;
+	width: 50vw;
+	height: 50vw;
 	-o-object-fit: cover;
 	object-fit: cover;
 	justify-self: center;
