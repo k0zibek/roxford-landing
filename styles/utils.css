@@ -1,0 +1,120 @@
+:root {
+	--clr-dark: #000000;
+	--clr-light: #f5f5f5;
+	--clr-primary: #eeb541;
+
+	--color-white-100: hsl(206, 0%, 100%);
+	--color-white-200: hsl(206, 0%, 90%);
+	--color-white-300: hsl(206, 0%, 80%);
+	--color-white-400: hsl(206, 0%, 65%);
+	--color-white-500: hsl(206, 0%, 50%);
+	--color-black-100: hsl(217, 30%, 18%);
+	--color-black-200: hsl(217, 27%, 15%);
+	--color-black-300: hsl(217, 27%, 12%);
+	--color-black-400: hsl(217, 52%, 9%);
+	--color-blue-100: hsl(215, 97%, 87%);
+	--color-blue-200: hsl(215, 96%, 78%);
+	--color-blue-300: hsl(215, 94%, 68%);
+	--color-blue-400: hsl(215, 91%, 60%);
+	--color-blue-500: hsl(215, 83%, 53%);
+	--color-blue-600: hsl(215, 76%, 48%);
+
+	--shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+* {
+	margin: 0;
+	line-height: calc(1em + 0.5rem);
+}
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+	list-style-type: none;
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-moz-tab-size: 4;
+	tab-size: 4;
+	scroll-behavior: smooth;
+	font-size: 100%;
+	box-sizing: inherit;
+	height: -webkit-fill-available;
+}
+
+body {
+	font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+	font-size: clamp(1rem, 2vw, 1.125rem);
+	font-weight: 400;
+	line-height: 1.15;
+	background-color: var(--clr-light);
+	color: var(--clr-dark);
+}
+
+p {
+	text-wrap: balance;
+}
+
+a,
+button {
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+button {
+	display: inline-block;
+	padding: 0;
+	color: inherit;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+	user-select: none;
+}
+
+a {
+	text-decoration: none;
+	color: var(--clr-dark);
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}
