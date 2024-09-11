@@ -2,8 +2,13 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	padding: 1rem;
+	padding: 8rem 0 1rem;
 	margin: 0 auto;
+}
+@media only screen and (min-width: 48rem) {
+	.container {
+		padding: 1rem;
+	}
 }
 
 .container-content {
@@ -11,11 +16,15 @@
 	padding: 0.5rem;
 }
 
+.font-primary {
+	color: var(--clr-primary);
+}
+
 /* Hero section */
 
 .hero-section {
 	margin: 0 auto;
-	padding: 0;
+	padding: 3rem 0 0 0;
 }
 
 .section-container {
@@ -31,14 +40,20 @@
 	color: inherit;
 	font-size: 2rem;
 	font-weight: 400;
+	text-align: center;
 }
 
 .heading-xl {
 	font-family: inherit;
-	font-size: clamp(2.648rem, 6vw, 4.241rem);
+	font-size: clamp(2rem, 4vw, 2.5rem);
 	font-weight: 700;
 	line-height: 1.15;
 	letter-spacing: -1px;
+}
+@media only screen and (min-width: 48rem) {
+	.heading-xl {
+		font-size: clamp(2.648rem, 6vw, 4.241rem);
+	}
 }
 
 .banner-column {
@@ -66,17 +81,17 @@
 
 .banner-image {
 	display: block;
-	width: 50vw;
-	height: 50vw;
+	width: 90vw;
+	height: 90vw;
 	-o-object-fit: cover;
 	object-fit: cover;
 	justify-self: center;
-	border: 10px solid var(--clr-primary);
-	background-color: var(--clr-primary);
 	border-radius: 50%;
 }
 @media only screen and (min-width: 48rem) {
 	.banner-image {
+		background-color: var(--clr-primary);
+		border: 1px solid var(--clr-primary);
 		order: 1;
 		max-width: 28rem;
 		height: auto;
@@ -89,22 +104,49 @@
 	}
 }
 
+.hidden-min {
+	position: relative;
+	display: inline-block;
+	flex: 0 1 auto;
+}
+.hidden-max {
+	display: none;
+}
+@media only screen and (min-width: 48rem) {
+	.hidden-min {
+		display: none;
+	}
+	.hidden-max {
+		display: flex;
+	}
+}
+
 .banner-inner {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
 	row-gap: 1.5rem;
 	margin-bottom: 2rem;
 }
 @media only screen and (min-width: 48rem) {
 	.banner-inner {
 		margin-bottom: 0;
+		align-items: flex-start;
 	}
 }
 @media only screen and (min-width: 64rem) {
-	.banner-inner {
-		margin-bottom: 0;
-	}
+	/* .banner-inner {
+	} */
+}
+
+.banner-secondary {
+	backdrop-filter: blur(1px);
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: bold;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 /* ul li */
@@ -164,5 +206,10 @@
 .btn-darken:hover {
 	transform: translateY(-3px);
 	box-shadow: 0px 5px 11px 4px rgba(255, 201, 40, 0.3);
+	background-color: rgb(255, 194, 11);
+}
+
+.btn-hero {
+	font-size: 1.8rem;
 	background-color: rgb(255, 194, 11);
 }
