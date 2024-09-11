@@ -1,19 +1,38 @@
-.container {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
+.container:first-of-type {
 	padding: 8rem 0 1rem;
-	margin: 0 auto;
 }
 @media only screen and (min-width: 48rem) {
-	.container {
+	.container:first-of-type {
 		padding: 1rem;
 	}
 }
 
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	margin: 0 auto;
+}
+
+.container-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	margin: 0 auto;
+}
+
 .container-content {
 	max-width: 75rem;
-	padding: 0.5rem;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
 
 .font-primary {
@@ -86,12 +105,12 @@
 	-o-object-fit: cover;
 	object-fit: cover;
 	justify-self: center;
-	border-radius: 50%;
 }
 @media only screen and (min-width: 48rem) {
 	.banner-image {
 		background-color: var(--clr-primary);
 		border: 1px solid var(--clr-primary);
+		border-radius: 50%;
 		order: 1;
 		max-width: 28rem;
 		height: auto;
@@ -148,11 +167,6 @@
 	list-style: none;
 }
 
-.about__ul li {
-	counter-increment: list-counter; /* Увеличиваем счетчик для каждого li */
-	position: relative; /* Чтобы ::before позиционировался относительно li */
-}
-
 .about__ul li::before {
 	position: absolute;
 	left: -30px;
@@ -192,8 +206,8 @@
 	color: var(--clr-dark);
 	background-color: var(--clr-primary);
 	box-shadow: var(--shadow-medium);
-	/* box-shadow: 0px 5px 10px 3px rgba(255, 201, 40, 0.2); */
 	transition: all 0.3s;
+	animation: breathing 3.5s ease-out infinite normal;
 }
 
 .btn-darken:hover {
@@ -205,4 +219,55 @@
 .btn-hero {
 	font-size: 1.8rem;
 	background-color: rgb(255, 194, 11);
+	-webkit-box-shadow: 0px 5px 68px 36px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 5px 68px 36px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 5px 68px 36px rgba(0, 0, 0, 0.2);
+}
+
+@-webkit-keyframes breathing {
+	0% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+
+	25% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+
+	60% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+
+	100% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+}
+
+@keyframes breathing {
+	0% {
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+
+	25% {
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
+
+	60% {
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+
+	100% {
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		transform: scale(0.9);
+	}
 }
