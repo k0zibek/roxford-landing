@@ -38,39 +38,57 @@
 		<section id="classes" class="container space">
 			<section class="container-content">
 				<h2 class="container-title">Қазақстан тарихынан дайындалам</h2>
-				<a href="https://chat.whatsapp.com/BURz235ptBu7PxWIBkY2GH" target="_blank">
-					<button class="btn btn-darken btn-inline">Тарих</button>
-				</a>
+				<button
+					class="btn btn-darken btn-inline open-form-btn"
+					data-href="https://chat.whatsapp.com/BURz235ptBu7PxWIBkY2GH"
+				>
+					Тарих
+				</button>
 			</section>
 			<section class="container-content">
 				<h2 class="container-title">Математикадан дайындалам</h2>
-				<a href="https://chat.whatsapp.com/HGCFtB60H56AX2oWAMB30y" target="_blank">
-					<button class="btn btn-darken btn-inline">Математика</button>
-				</a>
+				<button
+					class="btn btn-darken btn-inline open-form-btn"
+					data-href="https://chat.whatsapp.com/HGCFtB60H56AX2oWAMB30y"
+				>
+					Математика
+				</button>
 			</section>
 			<section class="container-content">
 				<h2 class="container-title">Биологиядан дайындалам</h2>
-				<a href="https://chat.whatsapp.com/DGUR6ubcJgq0uUBl9kWTD3" target="_blank">
-					<button class="btn btn-darken btn-inline">Биология</button>
-				</a>
+				<button
+					class="btn btn-darken btn-inline open-form-btn"
+					data-href="https://chat.whatsapp.com/DGUR6ubcJgq0uUBl9kWTD3"
+				>
+					Биология
+				</button>
 			</section>
 			<section class="container-content">
 				<h2 class="container-title">Физикадан дайындалам</h2>
-				<a href="https://chat.whatsapp.com/Bi3AMPlUtEHIXXhsxgXSzl" target="_blank">
-					<button class="btn btn-darken btn-inline">Физика</button>
-				</a>
+				<button
+					class="btn btn-darken btn-inline open-form-btn"
+					data-href="https://chat.whatsapp.com/Bi3AMPlUtEHIXXhsxgXSzl"
+				>
+					Физика
+				</button>
 			</section>
 			<section class="container-content">
 				<h2 class="container-title">Химиядан дайындалам</h2>
-				<a href="https://chat.whatsapp.com/DzfjfSWHz9rI5KsU8ASCgj" target="_blank">
-					<button class="btn btn-darken btn-inline">Химия</button>
-				</a>
+				<button
+					class="btn btn-darken btn-inline open-form-btn"
+					data-href="https://chat.whatsapp.com/DzfjfSWHz9rI5KsU8ASCgj"
+				>
+					Химия
+				</button>
 			</section>
 			<section class="container-content">
 				<h2 class="container-title">Мат. саудан дайындалам</h2>
-				<a href="https://chat.whatsapp.com/IX9tkFWe4uO29tetOm4Vtd" target="_blank">
-					<button class="btn btn-darken btn-inline">Мат сау</button>
-				</a>
+				<button
+					class="btn btn-darken btn-inline open-form-btn"
+					data-href="https://chat.whatsapp.com/IX9tkFWe4uO29tetOm4Vtd"
+				>
+					Мат сау
+				</button>
 			</section>
 		</section>
 		<section class="container-list">
@@ -83,6 +101,19 @@
 				</ul>
 			</section>
 		</section>
+		<div id="form-container" class="form-container">
+			<form id="myForm" method="POST">
+				<h2>Өзің туралы жазып кет</h2>
+				<label for="name">Аты-жөнің:</label>
+				<input type="text" id="name" name="entry.1275856074" required />
+				<label for="phone">Телефон номерің:</label>
+				<input type="text" id="phone" name="entry.1276122297" required />
+				<input type="text" id="lesson" name="entry.1106077589" value="" disabled />
+				<button type="submit" class="btn btn-darken btn-inline">Отправить</button>
+				<button type="button" class="btn btn-darken btn-inline" id="close-form">Закрыть</button>
+			</form>
+			<p id="error-message" style="color: red; display: none">Форманы толық толтыру қажет!</p>
+		</div>
 	</body>
 	<script src="script.js"></script>
 </html>
