@@ -81,8 +81,8 @@
 
 .banner-image {
 	display: block;
-	width: 90vw;
-	height: 90vw;
+	width: 100vw;
+	height: 100vw;
 	-o-object-fit: cover;
 	object-fit: cover;
 	justify-self: center;
@@ -125,18 +125,11 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	row-gap: 1.5rem;
-	margin-bottom: 2rem;
 }
 @media only screen and (min-width: 48rem) {
 	.banner-inner {
-		margin-bottom: 0;
 		align-items: flex-start;
 	}
-}
-@media only screen and (min-width: 64rem) {
-	/* .banner-inner {
-	} */
 }
 
 .banner-secondary {
