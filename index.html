@@ -92,7 +92,6 @@
 			</section>
 		</section>
 		<section class="container-list">
-			<!-- <section class="container-content-list"></section> -->
 			<h2 class="container-title">Тегін 2 күндік курсымызға кімдер қатыса алады:</h2>
 			<div class="container-list-images">
 				<div class="list-container card">
@@ -118,7 +117,7 @@
 		<div id="form-container" class="form-container">
 			<form id="myForm" class="form" method="POST">
 				<h2>Өзің туралы жазып кет</h2>
-				<p class="field required"></p>
+				<p class="field required">
 					<label class="label" for="name">Аты-жөнің:</label>
 					<input class="text-input" id="name" name="entry.1275856074" required type="text" />
 				</p>
@@ -128,11 +127,32 @@
 				</p>
 				<p class="field required">
 					<label class="label" for="email">Таңдаған пән</label>
-					<input class="text-input" id="lesson" name="entry.1106077589" required readonly type="text" value="" />
+					<input
+						class="text-input"
+						id="lesson"
+						name="entry.1106077589"
+						required
+						readonly
+						type="text"
+						value=""
+					/>
 				</p>
 				<p class="field button-container">
-					<button type="submit" class="btn btn-darken btn-inline">Отправить</button>
-					<button type="button" class="btn btn-darken btn-inline" id="close-form">Закрыть</button>
+					<button
+						type="submit"
+						class="btn btn-darken btn-inline form-btn"
+						style="background-color: rgb(120, 255, 107)"
+					>
+						Жіберу
+					</button>
+					<button
+						type="button"
+						class="btn btn-darken btn-inline form-btn"
+						id="close-form"
+						style="background-color: rgb(254, 79, 79)"
+					>
+						Жабу
+					</button>
 				</p>
 			</form>
 			<p id="error-message" style="color: red; display: none">Форманы толық толтыру қажет!</p>
