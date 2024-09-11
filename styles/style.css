@@ -39,6 +39,11 @@
 	color: var(--clr-primary);
 }
 
+#classes {
+	background-color: #ececec;
+	display: grid;
+}
+
 /* Hero section */
 
 .hero-section {
@@ -219,6 +224,7 @@
 
 .card__footer span {
 	font-size: calc(var(--size) * 0.055);
+	font-weight: 600;
 }
 
 /* Button */
@@ -340,6 +346,10 @@
 	flex-direction: column;
 }
 
+.form-title {
+	padding: 0.5em 0;
+}
+
 .open-form-btn {
 	margin: 10px;
 }
@@ -386,6 +396,7 @@
 }
 
 .form {
+	/* height: 500px; */
 	max-width: 320px; /* Ограничиваем ширину формы на мобильных */
 	padding: 1rem; /* Небольшие отступы */
 	margin: 0 auto;
@@ -393,7 +404,7 @@
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: center;
 }
 
 .form .field {
