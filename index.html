@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="icon.svg" />
+		<link rel="icon" type="image/svg+xml" href="images/icon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles/utils.css" />
 		<link rel="stylesheet" href="styles/style.css" />
@@ -158,5 +158,35 @@
 			<p id="error-message" style="color: red; display: none">Форманы толық толтыру қажет!</p>
 		</div>
 	</body>
+	<!-- Meta Pixel Code -->
+	<script>
+		!(function (f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function () {
+				n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s);
+		})(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '535929025494681');
+		fbq('track', 'PageView');
+	</script>
+	<noscript>
+		<img
+			height="1"
+			width="1"
+			style="display: none"
+			src="https://www.facebook.com/tr?id=535929025494681&ev=PageView&noscript=1"
+		/>
+	</noscript>
+	<!-- End Meta Pixel Code -->
 	<script src="script.js"></script>
 </html>

@@ -167,8 +167,7 @@
 }
 
 /* ul li */
-
-.about__ul {
+/* .about__ul {
 	list-style: none;
 }
 
@@ -176,7 +175,7 @@
 	position: absolute;
 	left: -30px;
 	font-weight: bold;
-}
+} */
 
 .container-list-images {
 	display: grid;
@@ -228,7 +227,6 @@
 }
 
 /* Button */
-
 .btn {
 	display: inline-block;
 	font-family: inherit;
@@ -244,7 +242,7 @@
 	user-select: none;
 	outline: none;
 	border: none;
-	border-radius: 0.25rem;
+	border-radius: 0.5rem;
 	text-transform: unset;
 	transition: all 0.3s ease-in-out;
 }
@@ -396,9 +394,8 @@
 }
 
 .form {
-	/* height: 500px; */
-	max-width: 320px; /* Ограничиваем ширину формы на мобильных */
-	padding: 1rem; /* Небольшие отступы */
+	max-width: 320px;
+	padding: 1rem;
 	margin: 0 auto;
 	position: relative;
 	display: flex;
@@ -413,43 +410,43 @@
 }
 
 .field.button-container {
-	flex-direction: column; /* Кнопки вертикально */
+	flex-direction: column;
 }
 
 .form-btn {
-	width: 100%; /* Кнопки на всю ширину */
+	width: 100%;
 	margin-bottom: 10px;
 }
 
 @media screen and (min-width: 640px) {
 	.form-container {
-		max-width: 35em; /* Больше ширина формы для больших экранов */
+		max-width: 35em;
 		padding: 20px;
 	}
 
 	.form .text-input,
 	.form .label {
-		padding: 0.75em 1em; /* Увеличиваем отступы для больших экранов */
+		padding: 0.75em 1em;
 	}
 
 	.form h2 {
-		font-size: 1.5rem; /* Увеличиваем размер заголовка */
+		font-size: 1.5rem;
 	}
 
 	.form .field {
-		margin: 0 0 1.5em 0; /* Больше отступы между полями */
+		margin: 0 0 1.5em 0;
 	}
 
 	.field.button-container {
-		flex-direction: row; /* Кнопки горизонтально на больших экранах */
+		flex-direction: row;
 	}
 
 	.btn {
-		width: auto; /* Кнопки занимают свою естественную ширину */
+		width: auto;
 	}
 
 	.form {
-		max-width: 35em; /* Широкая форма на больших экранах */
+		max-width: 35em;
 		padding: 2rem;
 	}
 }
